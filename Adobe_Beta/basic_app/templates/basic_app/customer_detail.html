@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+{% extends "basic_app/base.html" %}
+
+
+{% block body_content %}
+
+<div class="container">
+
+		<h5>Customer Details: </h5>
+
+
+<p>
+	<ul>
+		<li>Name: {{ customer_detail.last_name }}, {{ customer_detail.first_name }}</li>
+		<li>Cell: {{ customer_detail.cell_phone }}</li>
+		<li>Email: {{ customer_detail.email }}</li>
+		<li>Address: {{ customer_detail.address }}</li>
+		<li>DL Num: {{ customer_detail.dl_num }}</li>
+	</ul>
+</p>
+
+		
+	   
+</div>
+
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+
+{% extends "basic_app/base.html" %}
+
+
+{% block body_content %}
+
+
+<h1>Individual Driver Info Coming Soon!!</h1>
+
+
+<div class="container">
+	<h5>Driver Details: </h5>
+		<p>
+			<ul>
+				<li>Name: {{ driver_detail.last_name }}, {{ driver_detail.first_name }}</li>
+				<li>Cell: {{ driver_detail.cell_phone }}</li>
+				<li>Email: {{ driver_detail.email }}</li>
+			</ul>
+		</p>
+</div>
+
+
+
+
+{% endblock %}
+
+

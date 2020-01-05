@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+
+{% block body_content %}
+<div class="container">
+	<div class="jumbotron">
+		<h1>Customer Intake Form</h1>
+<!-- 		<h3>this is where the customer_intake_form goes</h3> -->
+
+	</div>
+</div>
+<div class="container">
+	<form method="POST">
+		{{ form.as_p }}
+		{% csrf_token %}
+		<input type="submit" class="btn btn-primary" value="Submit" name="">
+	</form>
+	
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+
+
+{% block body_content %}
+<!-- <div class="container"> -->
+	<h1>Upcoming Events</h1>
+	<div class="container">
+		<ol>
+			<li>
+				<h5><a href="{% url 'basic_app:intake_form' %}">Rental - Mon 12-12-20 - Borderlinks</a></h5>
+			</li>
+		
+<li>
+	<h5><a href="{% url 'basic_app:intake_form' %}">Shuttle - Tue 12-13-20 - Valdez Wedding</a></h5>
+</li>
+<li>
+	<h5><a href="{% url 'basic_app:intake_form' %}">Rental - Tue 12-13-20 - Smith, John</a></h5>	
+</li>
+
+	</ol>
+
+
+
+	</div>
+<!-- </div> -->
+
+<!-- <h1>{{number}}</h1> -->
+<!-- <p>{{text}}</p> -->
+
+
+{%  endblock %}

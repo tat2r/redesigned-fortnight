@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+<!-- {% load bootstrap %} -->
+
+{% block body_content %}
+
+<!-- <h1>Driver List Coming Soon!!</h1> -->
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>Search Driver List</h1><br>  <a href="#"><button class="btn btn-primary">Create New Driver</button></a><br><br>		
+			<form method="GET">
+					<div class="container">
+						<p>{{ filter.form|bootstrap }}</p>
+					</div><br><br>
+					<div class="container"><p><button type="submit" class="btn btn-primary">Search</button></p></div>
+			</form>
+	</div>
+</div>
+<ol>
+	{% for driver in filter.qs %}
+	<h4><a href="{{driver.id}}"><li>{{ driver.last_name }}, {{ driver.first_name }}</li></a></h4>
+	{% endfor %}
+</ol>
+
+
+
+
+{% endblock %}

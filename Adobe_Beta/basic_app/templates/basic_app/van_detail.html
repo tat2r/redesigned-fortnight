@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+
+{% extends "basic_app/base.html" %}
+
+
+{% block body_content %}
+
+
+<h1>Individual Driver Info Coming Soon!!</h1>
+
+
+<div class="container">
+	<h5>Van Details: </h5>
+		<p>
+			<ul>
+				<li>Van: {{ van_detail.van_num }}</li>
+				<li>YMM: {{ van_detail.year_make_model }}</li>
+				<li>VIN: {{ van_detail.vin }}</li>
+				<li>Plate: {{ van_detail.plate }}</li>
+			</ul>
+		</p>
+</div>
+
+
+
+
+{% endblock %}
+
+
